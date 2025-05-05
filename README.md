@@ -1,3 +1,3 @@
 3mbps<br>
 DE0-cv<br>
-WSL1->uarty->FPGA
+WSL1->uart->FPGA
