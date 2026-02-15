@@ -2,7 +2,7 @@
 
 /*
 
-    Input clock frequency is expected to 50.000MHz.
+    Input clock frequency is expected to 120.000MHz.
 
 */
 
@@ -160,7 +160,7 @@ module read {
 
         // Check bit length counter value
             //ShiftCount := ShiftCount + 4'b1 ;           // Shift counter + 1
-            if ( ShiftCount == 4'd7 ) {
+            if ( ShiftCount == 4'd8 ) {
                 data_check() ;
                 Rx_ShiftReg := { RxD_i , Rx_ShiftReg[11:1] } ;
                 ShiftCount:=0b1111;
@@ -203,4 +203,5 @@ module read {
     }
 
 /* ************************************************************ */
+
 }   // end of module
